@@ -1,0 +1,1 @@
+Coin toss project created using JS DOM. With this project, I aimed to combine my DOM knowledge and CSS animation knowledge and I got successful results.

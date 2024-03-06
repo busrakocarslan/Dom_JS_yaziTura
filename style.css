@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+}
+body{
+    height: 100%;
+    background: darkred  fixed;
+}
+.container{    
+    background-color:rgba(255, 235, 205, 0.51);
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+     
+   
+    
+}
+.durum{
+    text-align: right;
+    font-weight: 50px;
+    line-height: 25px;
+}
+
+#para{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+    transform-style: preserve-3d;
+
+}
+#para img{
+    width: 150px;
+}
+
+.paraYazi{
+    transform: rotateX(180deg);
+}
+
+.paraTura,
+.paraYazi{    
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+button{
+    width: 120px;
+    padding: 10px 0;
+    border: 3px solid darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.711);
+    color:darkred;
+}
+#reset-button{
+  color:gray;
+  background-color: darkred;
+  border: 3px solid lightslategray;
+
+}
+#flip-button:disabled{
+  display: none;
+}
+
+
+@keyframes spin-yazi {
+    0% {
+      transform: rotateX(0deg); 
+    }
+    100% {
+      transform: rotateX(2000deg);/* 360 derece tam bir dönüş yapana kadar dönsün*/
+    }
+  }
+    
+  @keyframes spin-tura {
+    0% {
+      transform: rotateX(0deg); 
+    }
+    100% {
+      transform: rotateX(2500deg);/* 360 derece tam bir dönüş yapana kadar dönsün*/
+    }
+  }
+    
